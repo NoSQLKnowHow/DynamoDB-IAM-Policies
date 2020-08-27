@@ -13,8 +13,8 @@
                 "dynamodb:ListStreams"
             ],
             "Resource": [
-                "arn:aws:dynamodb:*:*:table/*/index/*",
-                "arn:aws:dynamodb:*:*:table/*/stream/*"
+                "arn:aws:dynamodb:{aws_region}:{aws_account_id}:table/{table_name}/index/*",
+                "arn:aws:dynamodb:{aws_region}:{aws_account_id}:table/{table_name}/stream/*"
             ]
         },
         {
@@ -32,15 +32,15 @@
                 "dynamodb:Query",
                 "dynamodb:UpdateItem"
             ],
-            "Resource": "arn:aws:dynamodb:*:*:table/*"
+            "Resource": "arn:aws:dynamodb:{aws_region}:{aws_account_id}:table/{table_name}"
         },
         {
             "Sid": "DynamoDBDescribeLimitsAccess",
             "Effect": "Allow",
             "Action": "dynamodb:DescribeLimits",
             "Resource": [
-                "arn:aws:dynamodb:*:*:table/*",
-                "arn:aws:dynamodb:*:*:table/*/index/*"
+                "arn:aws:dynamodb:{aws_region}:{aws_account_id}:table/{table_name}",
+                "arn:aws:dynamodb:{aws_region}:{aws_account_id}:table/{table_name}/index/*"
             ]
         }
     ]
