@@ -22,8 +22,8 @@
                 "dax:UpdateItem"
             ],
             "Resource": [
-                "arn:aws:dynamodb:*:*:table/*/index/*",
-                "arn:aws:dax:*:*:cache/*"
+                "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/${DDB::TableName}/index/*",
+                "arn:aws:dax:${AWS::Region}:${AWS::AccountId}:cache/*"
             ]
         },
         {
@@ -41,7 +41,7 @@
                 "dynamodb:Query",
                 "dynamodb:UpdateItem"
             ],
-            "Resource": "arn:aws:dynamodb:*:*:table/*"
+            "Resource": "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/${DDB::TableName}"
         }
     ]
 }
