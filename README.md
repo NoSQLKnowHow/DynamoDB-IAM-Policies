@@ -8,7 +8,7 @@ A selection of example Amazon DynamoDB and DAX IAM policies with more restrictiv
 
 Note: Stacking the wildcard values in the resources can give access to a user across entire accounts, geographic regions, etc. Please be careful. You can always take these policies and customize to your own needs.
 
-* ***AmazonDynamoDBDataFullAccess.json*** - A templated policy that only allows read access to DynamoDB tables, indexes, and streams as well as write access to base tables.
-* ***AmazonDynamoDBDAXDataOperations*** - A template policy to allow read/write access to Amazon DynamoDB Accelerator (DAX).
-* ***AmazonDynamoDB+DAXReadWriteAccess.json*** - A template policy for allowing read/write access to both Amazon DynamoDB and Amazon DynamoDB Accelerator (DAX).
-* ***AmazonDynamoDBControlPlaneFullAccess.json*** - A template to assign admin access to an ops focused person/team so they can manage DynamoDB and DAX, but not read or change data.
+* ***[AmazonDynamoDBDataFullAccess.json](./AmazonDynamoDBDataFullAccess.json)*** - A templated policy that only allows read access to DynamoDB tables, indexes, and streams as well as write access to base tables.
+* ***[AmazonDynamoDBDAXDataOperations.json](./AmazonDynamoDBDAXDataOperations.json)*** - A template policy to allow read/write access to Amazon DynamoDB Accelerator (DAX).
+* ***[AmazonDynamoDB+DAXReadWriteAccess.json](./AmazonDynamoDB+DAXReadWriteAccess.json)*** - A template policy for allowing read/write access to both Amazon DynamoDB and Amazon DynamoDB Accelerator (DAX).
+* ***[AmazonDynamoDBControlPlaneFullAccess.json](./AmazonDynamoDBControlPlaneFullAccess.json)*** - A template to assign admin access to an ops focused person/team so they can manage DynamoDB and DAX, but not read or change data.
