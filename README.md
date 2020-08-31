@@ -11,4 +11,4 @@ Note: Stacking the wildcard values in the resources can give access to a user ac
 * ***[AmazonDynamoDBDataFullAccess.json](./AmazonDynamoDBDataFullAccess.json)*** - A templated policy that only allows read access to DynamoDB tables, indexes, and streams as well as write access to base tables.
 * ***[AmazonDynamoDBDAXDataOperations.json](./AmazonDynamoDBDAXDataOperations.json)*** - A template policy to allow read/write access to Amazon DynamoDB Accelerator (DAX).
 * ***[AmazonDynamoDB+DAXReadWriteAccess.json](./AmazonDynamoDB+DAXReadWriteAccess.json)*** - A template policy for allowing read/write access to both Amazon DynamoDB and Amazon DynamoDB Accelerator (DAX).
-* ***[AmazonDynamoDBControlPlaneFullAccess.json](./AmazonDynamoDBControlPlaneFullAccess.json)*** - A template to assign admin access to an ops focused person/team so they can manage DynamoDB and DAX, but not read or change data.
+* ***[AmazonDynamoDBInfrastructureFullAccess.json](./AmazonDynamoDBInfrastructureFullAccess.json)*** - A template to assign admin access to admin the DynamoDB and DAX infrastructure so they can manage that, but not read or change data in any table, index, stream, or cache.
