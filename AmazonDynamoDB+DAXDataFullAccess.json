@@ -6,20 +6,20 @@
             "Effect": "Allow",
             "Action": [
                 "dax:PutItem",
-                "dynamodb:ConditionCheckItem",
                 "dax:ConditionCheckItem",
                 "dax:BatchGetItem",
                 "dax:DeleteItem",
-                "dynamodb:Scan",
-                "dynamodb:Query",
                 "dax:DescribeClusters",
                 "dax:Scan",
                 "dax:GetItem",
                 "dax:BatchWriteItem",
-                "dynamodb:DescribeTable",
                 "dax:Query",
-                "dynamodb:GetItem",
-                "dax:UpdateItem"
+                "dax:UpdateItem",
+                "dynamodb:ConditionCheckItem",
+                "dynamodb:Scan",
+                "dynamodb:Query",
+                "dynamodb:DescribeTable",
+                "dynamodb:GetItem"
             ],
             "Resource": [
                 "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/${DDB::TableName}/index/*",

@@ -59,8 +59,7 @@
                 "dynamodb:RestoreTableFromBackup",
                 "dynamodb:CreateGlobalTable",
                 "dynamodb:DescribeBackup",
-                "dynamodb:DeleteBackup",
-                "dynamodb:GetRecords"
+                "dynamodb:DeleteBackup"
             ],
             "Resource": [
                 "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/*/index/*",
